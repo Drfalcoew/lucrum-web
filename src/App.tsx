@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './header/Header';
 
 function App() {
   return (
     <div className="App">
       <img className='Background-image' src='ethereal_0.webp' alt='google logo' />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header className="App-content">
+        <Header />
       </header>
     </div>
   );
