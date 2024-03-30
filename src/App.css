@@ -14,45 +14,6 @@
   overflow: hidden;
 }
 
-.App-logo {
-  height: 15vmin;
-  background-color: '#fff';
-  pointer-events: none;
-  filter: brightness(0) invert(0.1);
-  opacity: 0.8;
-  animation: App-logo-color-change 1s infinite;
-}
-
-/* app logo change colors every second */
-.App-logo:hover {
-  animation: App-logo-color-change 1s infinite;
-}
-
-/* Define the color change animation with more color variations */
-@keyframes App-logo-color-change {
-  0% {
-    filter: brightness(0) invert(0.1);
-  }
-  25% {
-    filter: brightness(0.5) invert(0.2);
-  }
-  50% {
-    filter: brightness(0.75) invert(0.4);
-  }
-  75% {
-    filter: brightness(0.5) invert(0.6);
-  }
-  100% {
-    filter: brightness(0) invert(0.1);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear, App-logo-color-change 3s infinite; /* Include both animations */
-  }
-}
-
 .App-content {
   min-height: 100vh;
   display: flex;
