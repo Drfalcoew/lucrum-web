@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Hero from './main/hero/Hero';
+import Services from './main/sections/Services';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <header className="App-content">
         <Hero />
       </header>
-      
+      <Services />
     </div>
   );
 }

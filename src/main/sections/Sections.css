@@ -1,0 +1,15 @@
+.services-root-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw - 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    max-width: 1140px;
+}
