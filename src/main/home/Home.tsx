@@ -9,7 +9,7 @@ const Home = () => {
         <div className='home-container'>
             <img className='Background-image' src='ethereal_0.webp' alt='google logo' />
             <header className="App-content">
-            <Hero />
+                <Hero />
             </header>
             <Services />
             <About />

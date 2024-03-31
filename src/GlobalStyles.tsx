@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
     --primary-color: ${'#41687a'};
     --accent-color: ${'#99cae1'};
     --background-color: ${'rgba(245, 245, 245, 0.5)'};
+    --text-color: ${'rgba(0, 0, 0, 0.7)'};
   }
 `;
 

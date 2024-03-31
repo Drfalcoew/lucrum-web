@@ -68,3 +68,79 @@
     height: auto; /* Maintain the image's aspect ratio */
 }
 
+
+/* Contact.tsx */
+.contact-root-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    width: 100vw - 40px;
+    background: var(--background-color);
+    height: 33vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: row;
+    max-width: 1140px;
+}
+
+.contact-row {
+    width: 100%;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2rem;
+    height: 100%;
+    border: none;
+    width: 100%;
+}
+
+.contact-title {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.contact-info-subtitle {
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.contact-info {
+    margin-top: 0px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: thin;
+    color: var(--text-color);
+}
+
+.follow-info {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+.follow-info:hover {
+    color: var(--accent-color);
+}
+
+.follow-info:active {
+    color: var(--primary-color);
+}
+
