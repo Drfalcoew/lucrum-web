@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Row, Card } from 'antd';
 import './Sections.css'
-import CustomCard from '../../../reusable-components/Card';
 
 const About = () => {
 
