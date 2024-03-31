@@ -29,12 +29,15 @@
     margin-bottom: 10px;
     padding-top: 5px;
     text-align: left;
-    color: #41687a;
+    color: var(--primary-color);
+    max-width: 90%;
+    white-space: wrap;
+    text-wrap: pretty;
 }
 
 .custom-card-icon {
     font-size: 1.5em;
-    color: #99cae1;
+    color: var(--accent-color);
 }
 
 .custom-card-index {
@@ -63,6 +66,7 @@
     font-size: 0.7em;
     color: #727272;
     padding: 20px 0;
+    cursor: pointer;
 }
 
 .custom-card-footer:hover {

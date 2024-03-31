@@ -1,17 +1,19 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Hero from './main/hero/Hero';
-import Services from './main/sections/Services';
+import StyledGlobalStyles from './GlobalStyles';
+import Home from './main/home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <img className='Background-image' src='ethereal_0.webp' alt='google logo' />
-      <header className="App-content">
-        <Hero />
-      </header>
-      <Services />
-    </div>
+    <BrowserRouter>
+      <StyledGlobalStyles />
+      <div className="App">
+        <Routes>
+          <Route path="/" Component={Home} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
