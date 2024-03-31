@@ -1,12 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 
 const Header = () => {
     return (
         <div className='Header-container'>
-        <img src='lucrum-web.png' className="App-logo" alt="logo" />
-        <div className='Header-title'>Advertising & Marketing Agency</div>
+            <div className='header-container-left'>
+                <img src='lucrum-web.png' className="App-logo" alt="logo" />
+                <Link to={'/'} className='Header-title'>Advertising & Marketing Agency</Link>
+            </div>
+            <div className='header-container-right'>
+                <Link to={'/'} className='header-menu-item'>Home</Link>
+                <Link to={'/about'} className='header-menu-item'>About</Link>
+                <Link to={'/services'} className='header-menu-item'>Services</Link>
+                <Link to={'/contact'} className='header-menu-item'>Contact</Link>
+            </div>
         </div>
     );
 }

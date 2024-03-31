@@ -18,7 +18,7 @@
     width: 100%;
     height: 100%;
     /* gradient */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); /* Adjust the gradient as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); /* Adjust the gradient as needed */
 }
 
 .title-container-root {
@@ -50,7 +50,6 @@
 }
 
 .hero-button {
-    /* transition: all 0.3s ease-in-out; */
     display: inline-block;
     margin-top: 25px;
 }

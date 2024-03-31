@@ -1,5 +1,4 @@
 import './Hero.css';
-import Header from "../header/Header";
 import { Button } from "antd";
 
 
@@ -15,7 +14,6 @@ const Hero = () => {
   
     return (
       <div className='hero-container'>
-        <Header />
         <div className='title-container-root'>
             <div className='black-overlay'></div>
             <div className='title-container'>
