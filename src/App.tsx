@@ -9,6 +9,7 @@ import Footer from './main/components/footer/Footer';
 import About from './main/pages/about/About';
 import Services from './main/pages/services/Services';
 import Header from './main/components/header/Header';
+import GetStarted from './main/pages/get-started/GetStarted';
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/about" Component={About} />
-          <Route path="/Services" Component={Services} />
-          <Route path="/Contact" Component={ContactPage} />
+          <Route path="/services" Component={Services} />
+          <Route path="/contact" Component={ContactPage} />
+          <Route path="/getstarted" Component={GetStarted} />
         </Routes>
         <Contact />
         <Footer />

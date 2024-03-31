@@ -6,9 +6,10 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-    background-color: var(--primary-color);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); /* Adjust the gradient as needed */
 }
 
 .page-container {
-    max-width: 1140px
+    max-width: 1140px;
+    justify-content: center;
 }

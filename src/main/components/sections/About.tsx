@@ -1,12 +1,13 @@
 import React from 'react';
 import { Col, Row, Card } from 'antd';
 import './Sections.css'
+import { Link } from 'react-router-dom';
 
 const About = () => {
 
-    const title = 'We are an Advertising & Marketing firm erat sed fermentum.';
+    const title = 'We are an Advertising & Marketing firm that specializes in growing your business online and offline.';
 
-    const description = 'We are a team of passionate creators and innovators dedicated to helping businesses thrive in the digital age.';// Our mission is to provide cutting-edge solutions that empower our clients to achieve their goals and make a lasting impact in their industries.';
+    const description = 'We take care of all your advertising and marketing needs so you can focus on providing the best products and services to your customers.';
 
     return (
         <div className='about-root-container'>
@@ -20,7 +21,7 @@ const About = () => {
                         title={<div className='custom-card-title about-us-card-title'>{title}</div>}
                         />
                         <div className='custom-card-description'>{description}</div>
-                        <div className='custom-card-footer'>Learn More</div>
+                        <Link to={'/about'} className='custom-card-footer'>Learn More</Link>
                     </Card>
                     </Col>
                     <Col span={12}>

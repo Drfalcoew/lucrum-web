@@ -1,8 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 import { Button } from "antd";
 
 
 const Hero = () => {
+
+    const nav = useNavigate();
+
     // animate letter by letter
     const title = 'LucrumWeb'.split('').map((letter, index) => {
       return (
@@ -19,7 +23,10 @@ const Hero = () => {
             <div className='title-container'>
                 <div className='hero-subtitle'>Welcome to</div>
                 <div className='hero-title'>{title}</div>
-                <Button className='hero-button' type='primary' size='large'>Get Started Now</Button>
+                  <Button onClick={() => {
+                    nav('/getstarted');
+
+                  }} className='hero-button' type='primary' size='large'>Get Started Now</Button>
             </div>
         </div>
       </div>

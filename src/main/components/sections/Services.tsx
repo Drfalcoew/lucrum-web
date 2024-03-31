@@ -47,7 +47,8 @@ const Services = () => {
                     {services.map((service, index) => {
                         return (
                             <Col span={8} key={index}>
-                                <CustomCard title={service.title} description={service.description} icon={service.icon} index={index} />
+                                <CustomCard title={service.title} description={service.description}
+                                 icon={service.icon} index={index} link={'/services'}/>
                             </Col>
                         )}
                     )}
