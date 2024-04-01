@@ -78,9 +78,11 @@
     opacity: 0.7;
 }
 
-.getstarted-card-details {
+.getstarted-card-details li {
     text-align: left;
     font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
 }
 
 .getstarted-card-button {
@@ -110,4 +112,12 @@
     flex-grow: 1;
     display: inherit;
     flex-direction: inherit;
+}
+
+.contact-us-styling p {
+    color: var(--text-color);
+}
+
+.contact-us-styling h2 {
+    color: var(--primary-color);
 }

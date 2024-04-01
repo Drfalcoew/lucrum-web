@@ -41,6 +41,7 @@
     font-size: 48px;
     letter-spacing: 15px;
     padding: 15px 0;
+    z-index: 5;
 }  
 
 .hero-subtitle {
