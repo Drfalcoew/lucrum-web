@@ -40,3 +40,10 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
+@media screen and (max-width: 768px) {
+    .page-title {
+        margin-top: 14vh;
+        font-size: 1.8em;
+    }
+    
+}

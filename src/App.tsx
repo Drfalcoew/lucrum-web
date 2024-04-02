@@ -10,12 +10,14 @@ import About from './main/pages/about/About';
 import Services from './main/pages/services/Services';
 import Header from './main/components/header/Header';
 import GetStarted from './main/pages/get-started/GetStarted';
+import ScrollToTop from './reusable-components/ScrollToTop';
 
 
 function App() {
   return (
     <BrowserRouter>
       <StyledGlobalStyles />
+      <ScrollToTop />
       <div className="App">
         <Header />
         <Routes>

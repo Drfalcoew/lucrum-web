@@ -7,6 +7,9 @@ import { DesktopOutlined, RiseOutlined, OpenAIOutlined, CustomerServiceOutlined,
 
 const Services = () => {
 
+    const isMobile = window.innerWidth < 520;
+    const isTablet = window.innerWidth >= 520 && window.innerWidth < 820;
+
     const services = [
         {
             title: 'Web Development',
@@ -46,7 +49,7 @@ const Services = () => {
                 <Row gutter={15}>
                     {services.map((service, index) => {
                         return (
-                            <Col span={8} key={index}>
+                            <Col span={isMobile ? 24 : isTablet ? 12 : 8} key={index}>
                                 <CustomCard title={service.title} description={service.description}
                                  icon={service.icon} index={index} link={'/services'}/>
                             </Col>

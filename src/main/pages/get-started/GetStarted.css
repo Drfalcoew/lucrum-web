@@ -121,3 +121,44 @@
 .contact-us-styling h2 {
     color: var(--primary-color);
 }
+
+@media screen and (max-width: 768px) {
+    .custom-card-root-container {
+        padding: 20px;
+        margin-top: 0px;
+        height: 90%;
+    }
+
+    .getstarted-card {
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    .getstarted-card-title {
+        font-size: 1.4em;
+    }
+
+    .getstarted-card-description {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .getstarted-card-price {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .getstarted-card-price-details {
+        padding: 0px 10px;
+        font-size: 0.69em;
+    }
+
+    .getstarted-card-details li {
+        font-size: 0.95em;
+    }
+
+    .getstarted-card-button {
+        font-size: 0.8em;
+    }
+    
+}

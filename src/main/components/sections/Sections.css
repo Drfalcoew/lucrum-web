@@ -5,6 +5,8 @@
     padding: 20px;
     width: 100vw - 40px;
     background-color: var(--background-color);
+    min-height: 100vh;
+    height: 100%;
 }
 
 .services-container {
@@ -21,7 +23,6 @@
     justify-content: center;
     align-items: center;
     padding: 70px;
-    width: 100vw - 40px;
     background: var(--background-color);
     max-height: 50vh;
 }
@@ -75,7 +76,6 @@
     justify-content: center;
     align-items: center;
     padding: 70px;
-    width: 100vw - 40px;
     background: var(--background-color);
     height: 25vh;
 }
@@ -144,3 +144,36 @@
     color: var(--primary-color);
 }
 
+@media screen and (max-width: 768px) {
+
+    .about-root-container {
+        padding: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        margin-top: 45vh;
+    }
+
+    .about-us-card-title {
+        font-size: 1.5rem !important;
+    }
+
+    .about-image-container {
+        height: 80%;
+        margin-top: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-root-container {
+        padding: 20px;
+    }
+
+    .contact-info-container {
+        padding: 10px;
+    }
+    
+}

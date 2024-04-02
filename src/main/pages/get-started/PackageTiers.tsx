@@ -5,6 +5,8 @@ import { Row, Col, Card, Button } from 'antd';
 
 const PackageTiers = () => {
 
+    const isMobile = window.innerWidth < 768;
+
     const cards = [
         {
             title: 'Standard',
@@ -57,7 +59,7 @@ const PackageTiers = () => {
                 <Row gutter={15} justify='center'>
                     {cards.map((card, index) => {
                         return (
-                            <Col span={8} key={index}>
+                            <Col span={isMobile ? 24 : 8} key={index}>
                                 <div className='custom-card-root-container'>
                                     <Card
                                         style={{ backgroundColor: index % 2 === 1 ? 'rgba(35,35,35, 0.8)' : 'rgba(49,49,49, 0.8)' }}
