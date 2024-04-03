@@ -26,6 +26,7 @@
 .page-container {
     max-width: 1140px;
     justify-content: center;
+    width: 97%;
 }
 
 .page-title {

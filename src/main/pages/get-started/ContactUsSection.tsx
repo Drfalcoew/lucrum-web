@@ -2,7 +2,6 @@ import React from 'react';
 import '../Page.css';
 import { Link } from 'react-router-dom';
 
-
 const ContactUsSection = () => {
     return (
         <div className='page-container-root' style={{minHeight: '0', background: '#fff', color: 'black'}}>

@@ -123,10 +123,18 @@
 }
 
 @media screen and (max-width: 768px) {
+    .contact-us-styling {
+        padding: 0 20px;
+    }
+
     .custom-card-root-container {
-        padding: 20px;
+        padding: 0px 10px;
         margin-top: 0px;
         height: 90%;
+    }
+
+    .package-card-container {
+        padding: 20px;
     }
 
     .getstarted-card {

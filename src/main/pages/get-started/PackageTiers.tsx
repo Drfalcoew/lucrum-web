@@ -60,7 +60,7 @@ const PackageTiers = () => {
                     {cards.map((card, index) => {
                         return (
                             <Col span={isMobile ? 24 : 8} key={index}>
-                                <div className='custom-card-root-container'>
+                                <div className='custom-card-root-container package-card-container'>
                                     <Card
                                         style={{ backgroundColor: index % 2 === 1 ? 'rgba(35,35,35, 0.8)' : 'rgba(49,49,49, 0.8)' }}
                                         className='getstarted-card'

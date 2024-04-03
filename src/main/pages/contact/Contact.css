@@ -157,3 +157,56 @@
     font-weight: 500;
     color: var(--primary-color);
 }
+
+@media screen and (max-width: 768px) {
+    .contact-title-container {
+        margin-top: 5rem;
+        width: 90%;
+        align-items: center;
+    }
+
+    .contact-form {
+        padding: 1rem;
+        width: fit-content;
+        min-width: 85%;
+        margin: 1.5rem auto 2rem;
+    }
+
+    .contact-form-outer-group {
+        flex-direction: column;
+    }
+
+    .contact-form-group {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contact-form-field {
+        font-size: 0.9rem;
+    }
+
+    .contact-form-field-message {
+        max-height: 150px;
+        width: 96%;
+    }
+
+    .contact-form-button {
+        height: 35px;
+    }
+
+    .contact-call-container {
+        width: 90%;
+    }
+
+    .contact-call h2 {
+        font-size: 1rem;
+    }
+
+    .contact-call a {
+        font-size: 1.1rem;
+    }
+
+    .contact-call span {
+        font-size: 1.3rem;
+    }
+}

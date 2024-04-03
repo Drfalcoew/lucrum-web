@@ -5,7 +5,6 @@
     padding: 20px;
     width: 100vw - 40px;
     background-color: var(--background-color);
-    min-height: 100vh;
     height: 100%;
 }
 
@@ -146,13 +145,18 @@
 
 @media screen and (max-width: 768px) {
 
+    .services-root-container {
+        padding: 0px;
+        padding-top: 20px;
+    }
+
     .about-root-container {
         padding: 20px;
+        max-height: unset;
     }
 
     .about-container {
         flex-direction: column;
-        margin-top: 45vh;
     }
 
     .about-us-card-title {
@@ -169,7 +173,7 @@
     }
 
     .contact-root-container {
-        padding: 20px;
+        padding: 30px;
     }
 
     .contact-info-container {

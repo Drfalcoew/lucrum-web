@@ -4,11 +4,14 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
+
+    const isMobile = window.innerWidth < 768;
+
     return (
         <div className='page-container-root'>
             <div className='page-container'>
                 <Row gutter={15} justify='center'>
-                    <Col span={12} style={{ display: 'flex', justifyContent: 'center' 
+                    <Col span={isMobile ? 24 : 12} style={{ display: 'flex', justifyContent: 'center' 
                 }}>
                     <div className='contact-title-container'>
                         <h1>Chat With Our Team</h1>
@@ -23,7 +26,7 @@ const Contact = () => {
                         </div>
                     </div>
                     </Col>
-                    <Col span={12}>
+                    <Col span={isMobile ? 24 : 12}>
                         <div className='contact-form-container'>
                                 <form className='contact-form'>
                                     <div className='contact-form-container-title'>
