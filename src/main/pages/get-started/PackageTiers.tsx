@@ -1,10 +1,12 @@
 import React from 'react';
 import '../Page.css';
 import './GetStarted.css';
+import { useNavigate } from 'react-router-dom';
 import { Row, Col, Card, Button } from 'antd';
 
 const PackageTiers = () => {
 
+    const nav = useNavigate();
     const isMobile = window.innerWidth < 768;
 
     const cards = [
@@ -78,7 +80,10 @@ const PackageTiers = () => {
                                             <div className='getstarted-card-details'>
                                                 {card.details}
                                             </div>
-                                            <Button type='primary' className='getstarted-card-button'>Get Started</Button>
+                                            <Button onClick={()=> {
+                                                nav('/contact')
+                                            }}
+                                            type='primary' className='getstarted-card-button'>Get Started</Button>
                                         </div>
                                     </Card>
                                 </div>
