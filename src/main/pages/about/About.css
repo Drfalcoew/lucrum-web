@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.about-image {
+.about-page-image {
     width: 100%;
     height: auto;
 }
@@ -44,11 +44,25 @@
 
 @media screen and (max-width: 768px) {
     .about-page-container-root {
-        min-height: 95vh;
+        min-height: 80vh;
     }
 
     .about-section-container {
         margin-bottom: 0;
         padding: 0;
+    }
+
+    .about-page-image {
+        width: 50%;
+        height: auto;
+    }
+
+    .about-details-container {
+        padding: 0 25px;
+    }
+
+    .about-page-mobile {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }

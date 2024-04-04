@@ -110,7 +110,7 @@ const FeaturesTable = () => {
     return (
         <div className='page-container-root' style={{ background: '#fff' }}>
             <div className='page-container'>
-                <Table
+                <Table id='services'
                     columns={columns}
                     dataSource={data}
                     pagination={false}

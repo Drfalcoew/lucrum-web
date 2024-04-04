@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-
 const Header = () => {
     return (
         <div className='Header-container'>
@@ -13,7 +12,7 @@ const Header = () => {
             <div className='header-container-right'>
                 <Link to={'/'} className='header-menu-item'>Home</Link>
                 <Link to={'/about'} className='header-menu-item'>About</Link>
-                <Link to={'/services'} className='header-menu-item'>Services</Link>
+                <a href={'/getstarted#services'} className='header-menu-item'>Services</a>
                 <Link to={'/contact'} className='header-menu-item'>Contact</Link>
             </div>
         </div>
