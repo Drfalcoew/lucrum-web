@@ -55,7 +55,6 @@ const Contact: React.FC<ScheduleProps> = ({ onAppointmentScheduled }) => {
         // Sending email with default subject and message
         try {
 
-        console.log('Sending email to customer with api url: ', process.env.REACT_APP_API_URL || 'http://localhost:8080');
 
         const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/email';
 
@@ -70,14 +69,13 @@ const Contact: React.FC<ScheduleProps> = ({ onAppointmentScheduled }) => {
         // Check if the response status is OK (status code 2xx)
         if (response.ok) {
             const result = await response.json();
-            console.log('Success:', result);
             if (result.entity && result.entity.orderNumber) {
             orderNumber = result.entity.orderNumber;
             } else {
-            console.error('Error:', result);
+            console.error('Error sending email');
             notification.error({
                 message: 'Error',
-                description: `Failed to schedule appointment: ${result.message}`,
+                description: `Failed to send email: ${result.message}`,
             });
             return;
             }
@@ -87,7 +85,7 @@ const Contact: React.FC<ScheduleProps> = ({ onAppointmentScheduled }) => {
             // Show an error notification
             notification.error({
             message: 'Error',
-            description: `Failed to schedule appointment: ${response.statusText}`,
+            description: `Failed to send email: ${response.statusText}`,
             })
         }
         } catch (error) {

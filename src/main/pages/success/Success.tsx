@@ -6,9 +6,8 @@ import './Success.css'
 const Success = (props : SchedulePropsData) => (
     <Result className='success-container'
     status="success"
-    title={`Thank you, ${props.fullName}. Your appointment request has been submitted.`}
+    title={`Thank you, ${props.fullName}. We have received your request.`}
     subTitle={`We will send you a confirmation email at ${props.email}.`}
-   
   />
 );
 
