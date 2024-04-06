@@ -78,6 +78,10 @@
     padding: 0.25rem;
 }
 
+.contact-form-address {
+    width: 98%;
+}
+
 .contact-form-field-message {
     resize: vertical;
     max-height: 180px;
@@ -187,6 +191,10 @@
 
     .contact-form-field-message {
         max-height: 150px;
+        width: 96%;
+    }
+
+    .contact-form-address {
         width: 96%;
     }
 

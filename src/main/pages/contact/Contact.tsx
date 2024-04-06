@@ -1,11 +1,125 @@
 import { Col, Row } from 'antd';
 import { PhoneOutlined } from '@ant-design/icons';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Contact.css';
+import { EmailRecipient, SchedulePropsData } from '../../../Types';
+import { notification } from 'antd';
+import LoadingModal from '../../../reusable-components/LoadingModal';
 
-const Contact = () => {
+
+
+interface ScheduleProps {
+    onAppointmentScheduled: (data: SchedulePropsData) => void;
+  }
+
+const Contact: React.FC<ScheduleProps> = ({ onAppointmentScheduled }) => {
 
     const isMobile = window.innerWidth < 768;
+    const [loading, setLoading] = React.useState(false);
+    const navigate = useNavigate();
+
+    const showLoadingModal = () => {
+        setLoading(true);
+    };
+
+    const hideLoadingModal = () => {
+        setLoading(false);
+    };
+
+    /* onFinish function to send data to backend */
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const fullName = formData.get('firstname') + ' ' + formData.get('lastname') as string;
+        const email = formData.get('email') as string;
+        const phoneNumber = formData.get('phone') as string;
+        const comments = formData.get('message') as string;
+        const businessAddress = formData.get('address') as string;
+
+
+        let orderNumber = null;
+        
+        showLoadingModal();
+
+        // Send email to customer
+        const emailProps : EmailRecipient = {
+        recipientEmail: email,
+        recipientName: fullName,
+        phoneNumber: phoneNumber,
+        subject: "Your appointment has been scheduled",
+        message: `Thank you, ${fullName}. Please wait for a confirmation email from us.`,
+        address: businessAddress,
+        comments: comments,
+        };
+
+        // Sending email with default subject and message
+        try {
+
+        console.log('Sending email to customer with api url: ', process.env.REACT_APP_API_URL || 'http://localhost:8080');
+
+        const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/email';
+
+        console.log(apiUrl);
+
+        const response = await fetch(`${apiUrl}`, {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(emailProps),
+        });
+
+        // Check if the response status is OK (status code 2xx)
+        if (response.ok) {
+            const result = await response.json();
+            console.log('Success:', result);
+            if (result.entity && result.entity.orderNumber) {
+            orderNumber = result.entity.orderNumber;
+            } else {
+            console.error('Error:', result);
+            notification.error({
+                message: 'Error',
+                description: `Failed to schedule appointment: ${result.message}`,
+            });
+            return;
+            }
+        } else {
+            // If the response status is not OK, handle the error
+            console.error('Error:', response.status, response.statusText);
+            // Show an error notification
+            notification.error({
+            message: 'Error',
+            description: `Failed to schedule appointment: ${response.statusText}`,
+            })
+        }
+        } catch (error) {
+        console.error('Fetch error:', error);
+        // Show an error notification
+        notification.error({
+            message: 'Fetch Error',
+            description: 'Failed to fetch data. Please try again later.',
+        });
+        return;
+        } finally {
+        hideLoadingModal();
+        }
+        
+    
+        if (orderNumber) { // This navigates to the success page
+            onAppointmentScheduled({
+                fullName: fullName,
+                email: email,
+                orderNumber: orderNumber,
+            });
+
+            navigate('/success');
+        }
+    }
+
+
+
 
     return (
         <div className='page-container-root'>
@@ -28,7 +142,7 @@ const Contact = () => {
                     </Col>
                     <Col span={isMobile ? 24 : 12}>
                         <div className='contact-form-container'>
-                                <form className='contact-form'>
+                                <form className='contact-form' method='post' onSubmit={handleSubmit}>
                                     <div className='contact-form-container-title'>
                                         <h2>Send Us An Email</h2>
                                     </div>
@@ -53,16 +167,22 @@ const Contact = () => {
                                         </div>
                                     </div>
                                     <div className='contact-form-group'>
+                                        <label className='contact-form-label' htmlFor='address'>Business Address *</label>
+                                        <input className='contact-form-field contact-form-address' type='text' id='address' name='address' />
+                                    </div>
+                                    <div className='contact-form-group'>
                                         <label className='contact-form-label' htmlFor='message'>Message</label>
                                         <textarea className='contact-form-field contact-form-field-message'
-                                         id='message' name='message' required></textarea>
+                                         id='message' name='message'></textarea>
                                     </div>
+
                                     <button className='contact-form-button' type='submit'>Submit</button>
                                 </form>
                         </div>
                     </Col>
                 </Row>
             </div>
+            <LoadingModal visible={loading} closeModal={hideLoadingModal} />
         </div>
     );
 }
