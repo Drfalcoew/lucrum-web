@@ -48,8 +48,6 @@ const Contact: React.FC<ScheduleProps> = ({ onAppointmentScheduled }) => {
         recipientEmail: email,
         recipientName: fullName,
         phoneNumber: phoneNumber,
-        subject: "Your appointment has been scheduled",
-        message: `Thank you, ${fullName}. Please wait for a confirmation email from us.`,
         address: businessAddress,
         comments: comments,
         };
