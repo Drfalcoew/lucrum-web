@@ -83,7 +83,7 @@ const PackageTiers = () => {
                                             <Button onClick={()=> {
                                                 nav('/contact')
                                             }}
-                                            type='primary' className='getstarted-card-button'>Get Started</Button>
+                                            type='primary' className='getstarted-card-button'>More Info</Button>
                                         </div>
                                     </Card>
                                 </div>
