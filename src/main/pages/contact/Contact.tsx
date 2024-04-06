@@ -59,8 +59,6 @@ const Contact: React.FC<ScheduleProps> = ({ onAppointmentScheduled }) => {
 
         const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/email';
 
-        console.log(apiUrl);
-
         const response = await fetch(`${apiUrl}`, {
             method: 'POST',
             headers: {
