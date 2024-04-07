@@ -51,7 +51,7 @@ const Services = () => {
                         return (
                             <Col span={isMobile ? 24 : isTablet ? 12 : 8} key={index}>
                                 <CustomCard title={service.title} description={service.description}
-                                 icon={service.icon} index={index} link={'/services'}/>
+                                 icon={service.icon} index={index} link={'/getstarted#services'}/>
                             </Col>
                         )}
                     )}
