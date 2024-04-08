@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className='Header-container'>
             <div className='header-container-left'>
-                <img src='lucrum-web.png' className="App-logo" alt="logo" />
+                <img src='lucrum_web.webp' className="App-logo" alt="logo" />
                 <Link to={'/'} className='Header-title'>Advertising & Marketing Agency</Link>
             </div>
             <div className='header-container-right'>
