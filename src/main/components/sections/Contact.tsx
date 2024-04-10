@@ -20,7 +20,7 @@ const Contact = () => {
                             <h1 className='contact-title'>CONTACT</h1>
                             <p className='contact-info-subtitle'>California</p>
                             <p className='contact-info'>Beaumont, 92223</p>
-                            <p className='contact-info'>drew@fostersestate.com</p>
+                            <p className='contact-info'>drew@lucrumweb.com</p>
                             <p className='contact-info'>909-358-5018</p>
                         </div>
                     </Col>
