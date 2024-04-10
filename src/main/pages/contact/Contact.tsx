@@ -129,7 +129,7 @@ const Contact: React.FC<ScheduleProps> = ({ onAppointmentScheduled }) => {
                             <div className='contact-call'>
                                 <PhoneOutlined />
                                 <h2>Call us directly</h2>
-                                <a href='tel:+1123-456-7890'>+1 123-456-7890</a>
+                                <a href='tel:+1909-358-5018'>+1 909-358-5018</a>
                             </div>
                         </div>
                     </div>

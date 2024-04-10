@@ -10,9 +10,9 @@ const Contact = () => {
                     <Col span={12}>
                         <div className='contact-info-container'>
                             <h1 className='contact-title'>FOLLOW US</h1>
-                            <p className='follow-info'>Facebook</p>
-                            <p className='follow-info'>Instagram</p>
-                            <p className='follow-info'>Twitter</p>
+                            <a href="https://www.facebook.com/profile.php?id=61558051480602" className='follow-info'>Facebook</a>
+                            <a href="https://www.instagram.com/lucrumweb/" className='follow-info'>Instagram</a>
+                            <a href="https://twitter.com/LucrumWeb" className='follow-info'>Twitter</a>
                         </div>
                     </Col>
                     <Col span={12}>
