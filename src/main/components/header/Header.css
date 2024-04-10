@@ -65,9 +65,9 @@
     height: 7vmin;
     pointer-events: none;
     opacity: 1;
-    border-radius: 50%;
-    border: 1px solid #000000;
+    border-radius: 5%; 
     margin-right: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   }
   
   @media (prefers-reduced-motion: no-preference) {
