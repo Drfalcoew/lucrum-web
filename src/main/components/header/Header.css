@@ -69,20 +69,53 @@
     margin-right: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    
+
+  .header-container-mobile {
+    display: none;
   }
 
-  @keyframes App-logo-color-change {
-    0% {
-      filter: brightness(1) invert(1);
+  @media screen and (max-width: 768px) {
+    .Header-container {
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-right: 0px;
+        width: calc(100% - 30px);
     }
-    50% {
-      filter: brightness(1) invert(0);
+    .header-container-right {
+        display: none;
+    }
+    .Header-title {
+        font-size: 0.75em;
+    }
+    .App-logo {
+        height: 10vmin;
+    }
+    .header-container-mobile {
+        display: flex;
+        flex: 0.2;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+    }
+    .header-container-mobile-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+    }
+    .header-container-menu-icon {
+       cursor: pointer;
+    }
+    .slide-in {
+        animation: slide-in 0.5s forwards;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
     }
     100% {
-      filter: brightness(1) invert(0.8);
+        transform: translateX(0%);
     }
-  }
-
+}
