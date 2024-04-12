@@ -122,6 +122,10 @@
     color: var(--primary-color);
 }
 
+.features-table {
+    margin-top: 25px;
+}
+
 @media screen and (max-width: 768px) {
     .contact-us-styling {
         padding: 0 20px;

@@ -104,6 +104,14 @@
     width: 100%;
 }
 
+.contact-info-container-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .contact-title {
     font-size: 0.9rem;
     margin-bottom: 15px;
@@ -174,11 +182,19 @@
 
     .contact-root-container {
         padding: 30px;
-        height: 30vh;
+        height: 45vh;
     }
 
     .contact-info-container {
         padding: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .contact-info-subtitle {
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
     }
     
 }

@@ -79,27 +79,20 @@ const FeaturesTable = () => {
         },
         {
             key: '8',
-            feature: 'Advanced AI integration',
-            standard: '',
-            premium: '',
-            deluxe: '✓',
-        },
-        {
-            key: '9',
             feature: 'Extended social media management',
             standard: '',
             premium: '',
             deluxe: '✓',
         },
         {
-            key: '10',
+            key: '9',
             feature: 'Advanced analytics',
             standard: '',
             premium: '',
             deluxe: '✓',
         },
         {
-            key: '11',
+            key: '10',
             feature: 'Custom marketing solutions',
             standard: '',
             premium: '',
@@ -109,7 +102,7 @@ const FeaturesTable = () => {
 
     return (
         <div className='page-container-root' style={{ background: '#fff' }}>
-            <div className='page-container'>
+            <div className='page-container features-table'>
                 <Table id='services'
                     columns={columns}
                     dataSource={data}
