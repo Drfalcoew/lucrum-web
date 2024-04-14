@@ -13,6 +13,10 @@ import GetStarted from './main/pages/get-started/GetStarted';
 import ScrollToTop from './reusable-components/ScrollToTop';
 import { SchedulePropsData } from './Types';
 import Success from './main/pages/success/Success';
+import DemoHome from './demo-app/home/Home';
+import DemoAbout from './demo-app/about/About';
+import DemoHeader from './demo-app/header/Header';
+import DemoFooter from './demo-app/footer/Footer';
 
 
 function App() {
@@ -28,24 +32,49 @@ function App() {
       <StyledGlobalStyles />
       <ScrollToTop />
       <div className="App">
-        <Header />
         <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/about" Component={About} />
-          <Route path="/services" Component={Services} />
-          <Route path="/contact" element={<ContactPage onAppointmentScheduled={handleAppointmentScheduled} />} />
-          <Route path="/getstarted" Component={GetStarted} />
-          {appointmentData ? (
-            <Route
-              path="/success"
-              element={<Success fullName={appointmentData.fullName} orderNumber={appointmentData.orderNumber} email={appointmentData.email} />}
-            />
-          ) : (
-            <Route path="/success" element={<Navigate to="/schedule" />} />
-          )}
+          {/* Routes for main site */}
+          <Route
+            path="/*"
+            element={
+              <>
+                <Header />
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/services" element={<Services />} />
+                  <Route path="/contact" element={<ContactPage onAppointmentScheduled={handleAppointmentScheduled} />} />
+                  <Route path="/getstarted" element={<GetStarted />} />
+                  {appointmentData ? (
+                    <Route
+                      path="/success"
+                      element={<Success fullName={appointmentData.fullName} orderNumber={appointmentData.orderNumber} email={appointmentData.email} />}
+                    />
+                  ) : (
+                    <Route path="/success" element={<Navigate to="/schedule" />} />
+                  )}
+                </Routes>
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+          
+          {/* Routes for demo site */}
+          <Route
+            path="/demo/*"
+            element={
+              <>
+                <DemoHeader />
+                <Routes>
+                  <Route path="/" element={<DemoHome />} />
+                  <Route path="/about" element={<DemoAbout />} />
+                </Routes>
+                <DemoFooter />
+              </>
+            }
+          />
         </Routes>
-        <Contact />
-        <Footer />
       </div>
     </BrowserRouter>
   );

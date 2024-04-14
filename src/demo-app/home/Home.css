@@ -1,0 +1,223 @@
+
+.hero-container-root {
+    background: #f8f8f8;
+}
+
+.demo-hero-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 80vh;
+}
+
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100%;
+}
+
+.demo-hero-title {
+    color: #FE3B1F !important;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.demo-hero-subtitle {
+    color: #FE3B1F !important;
+    font-size: 1.5rem;
+    width: 80%;
+    font-weight: 500;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+}
+
+.demo-hero-button {
+    background-color: #00269A !important;
+    color: white !important;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    height: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.demo-hero-overlay-container {
+    z-index: -5;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 80vh;
+}
+
+.demo-hero-overlay {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.hero-carousel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+
+/* DEMO */
+
+.demo-popular-items-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.demo-popular-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F8F8F8;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.demo-popular-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.demo-popular-item-img-container {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-popular-item-img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.demo-popular-item-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FE3B1F;
+    margin: 0;
+    padding: 0;
+}
+
+.demo-popular-item-price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.demo-popular-items-arrow-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    padding: 10px;
+}
+
+.demo-popular-items-arrow {
+    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:  10px;
+    border-radius: 50%;
+    border: 3px solid #555;
+    color: #555;
+    cursor: pointer;
+}
+
+/* ABOUT */
+
+.demo-page-about-container {
+    position: relative;
+}
+
+.demo-page-about-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #FE3B1F;
+    font-size: 2.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.demo-page-img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.demo-page-about-title {
+    color: #FE3B1F;
+    font-size: 2.5rem;
+    margin: 0;
+    width: 70%;
+}
+
+.demo-page-about-subtitle {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.demo-page-about-button {
+    background-color: #00269A;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    height: auto;
+    border-radius: 30px;
+    text-decoration: none;
+}
