@@ -10,6 +10,7 @@ interface AboutSectionProps {
 
 
 const AboutSection: React.FC<AboutSectionProps> = (props: AboutSectionProps) => {
+
     return (
         <div className='demo-page-about-container'>
             <img src={props.img} alt='About Us' className='demo-page-img' />

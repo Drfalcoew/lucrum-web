@@ -51,6 +51,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+    font-weight: bolder;
     cursor: pointer;
     height: 7.5vmin;
     transition: background-color 0.3s;
@@ -66,4 +67,32 @@
     opacity: 1;
     border-radius: 5%; 
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .demo-header {
+        background: none;
+        padding: 1px;
+        max-height: 12vmin;
+        height: 12vmin;
+    }
+
+    .demo-header-container {
+        padding: 0 0 0 5px;
+        max-height: 12vmin;
+    }
+
+    .demo-header-button {
+        padding: 0px 15px;
+        font-size: 16px;
+        height: 14vmin;
+    }
+
+    .demo-header-title {
+        font-size: 1.2em;
+    }
+
+    .demo-app-logo {
+        height: 12vmin;
+    }
 }
