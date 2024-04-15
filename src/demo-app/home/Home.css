@@ -87,16 +87,24 @@
         flex-direction: column;
     }
 
+    .demo-hero-title {
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+
+    .demo-hero-subtitle {
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+    .demo-hero-button {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
     .hero-image-container {
         max-height: 45vh;
         height: 45vh;
-    }
-
-    .hero-image {
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: 100%;
     }
 
     .demo-hero-mobile-content {

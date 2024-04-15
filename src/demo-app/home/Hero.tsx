@@ -13,20 +13,20 @@ const DemoHero = () => {
             title: 'Demo Shop',
             subtitle: 'Welcome to the Demo Shop!',
             buttonText: 'ORDER NOW',
-            image: 'https://assets.bonappetit.com/photos/61ba71c255a75f7507698f22/master/w_1600%2Cc_limit/Dame_credit_Evan%2520Sung.jpg'
+            image: 'https://www.azamara.com/static-assets/images/blogs/Blog_Preparing%20Authentic%20Mexican%20Meal.jpg'
         },
         {
             title: 'New Special',
             subtitle: 'Come today and try our new special!',
             buttonText: 'ORDER NOW',
-            image: 'https://cdn.vox-cdn.com/thumbor/tvFmrUjJ-39fH4mYMD3TrbP-L5s=/0x0:3070x2048/1200x800/filters:focal(1290x779:1780x1269)/cdn.vox-cdn.com/uploads/chorus_image/image/72978594/Signature_Hansik________Menu_.0.jpg'
+            image: 'https://images.squarespace-cdn.com/content/v1/55a68174e4b086a3c2acfe59/1639940746128-0UC6H5VGD74O367PNAK5/red-sombrero-background-food.png?format=2500w'
         }
     ];
     
 
     return (
         <div className='page-container demo-page-container'>
-            <Carousel speed={500} autoplay autoplaySpeed={7500}
+            <Carousel speed={500}  autoplaySpeed={7500}
             className='hero-carousel'>
                 {heroItems.map((item, index) => (
                     <div key={index}>
