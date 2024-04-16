@@ -67,6 +67,11 @@
     opacity: 1;
     border-radius: 5%; 
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.demo-header-container-left {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

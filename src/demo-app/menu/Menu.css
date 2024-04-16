@@ -1,0 +1,109 @@
+/* DEMO MENU CONTAINER */
+
+.demo-menu-container-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+}
+
+.demo-menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1500px;
+}
+
+.demo-menu-table-view-container {
+    padding: 20px;
+    flex: 4;
+}
+
+/* DEMO MENU LIST */
+
+.demo-menu-list-container {
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.demo-menu-list-title {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.demo-menu-table-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DEMO ITEM */
+
+.demo-menu-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.demo-menu-item-container:hover {
+    box-shadow: 0px 5px 0px 0px rgba(255, 0, 0, 0.15);
+}
+
+.demo-menu-item-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.demo-menu-item-img {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 125%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.demo-menu-item-name-container {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 96px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.15);
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.demo-menu-item-name {
+    font-size: 22px;
+    font-weight: bold;
+}

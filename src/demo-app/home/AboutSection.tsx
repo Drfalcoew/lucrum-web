@@ -2,6 +2,7 @@ import { Button } from 'antd';
 import React from 'react';
 
 interface AboutSectionProps {
+    nav: any;
     img: string;
     title: string;
     subtitle: string;
@@ -19,7 +20,7 @@ const AboutSection: React.FC<AboutSectionProps> = (props: AboutSectionProps) => 
                 <p className='demo-page-about-subtitle'>
                     {props.subtitle}
                 </p>
-                <Button type='primary' className='demo-page-about-button'>{props.button}</Button>
+                <Button onClick={() => props.nav('demo/menu')} type='primary' className='demo-page-about-button'>{props.button}</Button>
             </div>
         </div>
     );

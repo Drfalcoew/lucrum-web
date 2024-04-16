@@ -1,9 +1,12 @@
 import React from 'react';
 import { Button, Col, Row, Carousel } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import '../Common.css';
 
 const DemoHero = () => {
+    
+    const nav = useNavigate();
 
     const isMobile = window.innerWidth < 768;
 
@@ -41,7 +44,7 @@ const DemoHero = () => {
                                     </div>
                                     <h1 className='demo-hero-title'>{item.title}</h1>
                                     <p className='demo-hero-subtitle'>{item.subtitle}</p>
-                                    <Button className='demo-hero-button' type='primary'>{item.buttonText}</Button>
+                                    <Button onClick={() => nav('/demo/menu')} className='demo-hero-button' type='primary'>{item.buttonText}</Button>
                                 </div>
                             </div>
                         ) : (
@@ -52,7 +55,7 @@ const DemoHero = () => {
                                     </div>
                                     <h1 className='demo-hero-title'>{item.title}</h1>
                                     <p className='demo-hero-subtitle'>{item.subtitle}</p>
-                                    <Button className='demo-hero-button' type='primary'>{item.buttonText}</Button>
+                                    <Button onClick={() => nav('/demo/menu')} className='demo-hero-button' type='primary'>{item.buttonText}</Button>
                                 </Col>
                                 <Col span={12}>
                                     <div className='hero-image-container'>

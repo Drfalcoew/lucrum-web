@@ -17,6 +17,7 @@ import DemoHome from './demo-app/home/Home';
 import DemoAbout from './demo-app/about/About';
 import DemoHeader from './demo-app/header/Header';
 import DemoFooter from './demo-app/footer/Footer';
+import DemoMenu from './demo-app/menu/Menu';
 
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<DemoHome />} />
                   <Route path="/about" element={<DemoAbout />} />
+                  <Route path="/menu" element={<DemoMenu />} />
                 </Routes>
                 <DemoFooter />
               </>
