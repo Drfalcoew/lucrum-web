@@ -18,7 +18,7 @@ import DemoAbout from './demo-app/about/About';
 import DemoHeader from './demo-app/header/Header';
 import DemoFooter from './demo-app/footer/Footer';
 import DemoMenu from './demo-app/menu/Menu';
-import Items, { ItemsProps } from './demo-app/items/Items';
+import Items, { ItemProps } from './demo-app/items/Items';
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
     setAppointmentData(data);
   };
 
-  const items: ItemsProps[] = [
+  const items: ItemProps[] = [
     {
       image: 'https://via.placeholder.com/150',
       title: 'Double Chicken Tostada Salad ',
