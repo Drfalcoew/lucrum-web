@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const DemoHeader = () => {
 
     const navigate = useNavigate();
+    const headerTitle = 'El Charro';
 
     const nav = (path: string) => {
         if (window.location.pathname === `/${path}/`) {
@@ -20,7 +21,7 @@ const DemoHeader = () => {
                     className='demo-app-logo' alt='logo' />
                 </div>
                 <div className='demo-header-center'>
-                    <h1 className='demo-header-title'>Demo Shop</h1>
+                    <h1 className='demo-header-title'>{headerTitle}</h1>
                 </div>
                 <div className='demo-header-container-right'>
                     <button className='demo-header-button' onClick={() => nav('demo/menu')}>ORDER NOW</button>

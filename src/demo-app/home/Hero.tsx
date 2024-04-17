@@ -13,8 +13,8 @@ const DemoHero = () => {
 
     const heroItems = [
         {
-            title: 'Demo Shop',
-            subtitle: 'Welcome to the Demo Shop!',
+            title: 'El Charro',
+            subtitle: 'Welcome to El Charro!',
             buttonText: 'ORDER NOW',
             image: 'https://www.azamara.com/static-assets/images/blogs/Blog_Preparing%20Authentic%20Mexican%20Meal.jpg'
         },
@@ -29,7 +29,7 @@ const DemoHero = () => {
 
     return (
         <div className='page-container demo-page-container'>
-            <Carousel speed={500}  autoplaySpeed={7500}
+            <Carousel speed={500} autoplaySpeed={7500}
             className='hero-carousel'>
                 {heroItems.map((item, index) => (
                     <div key={index}>

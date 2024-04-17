@@ -107,3 +107,9 @@
     font-size: 22px;
     font-weight: bold;
 }
+
+
+.demo-menu-item-link {
+    text-decoration: none;
+    color: black;
+}

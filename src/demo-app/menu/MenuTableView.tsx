@@ -1,20 +1,22 @@
 import React from 'react';
 import './Menu.css';
+import { Link } from 'react-router-dom';
 
 export interface MenuTableViewProps {
-    items: MenuItemProps[];
+    categories: MenuItemProps[];
 }
 
 const DemoMenuTableView : React.FC<MenuTableViewProps> = (props: MenuTableViewProps) => {
 
-    const { items } = props;
+    const { categories } = props;
+
 
     return (
         <div className='demo-menu-table-view-container'>
             <h1>MAIN MENU</h1>
             <div className='demo-menu-table-view'>
-                {items.map((item) => (
-                    <DemoMenuItem key={item.key} image={item.image} name={item.name} />
+                {categories.map((item) => (
+                    <DemoMenuItem id={item.id} image={item.image} name={item.name} />
                 ))}
             </div>
         </div>
@@ -22,22 +24,26 @@ const DemoMenuTableView : React.FC<MenuTableViewProps> = (props: MenuTableViewPr
 }
 
 interface MenuItemProps {
-    key: number;
-    image: string;
+    id: number;
     name: string;
+    image: string;
 }
 
 const DemoMenuItem : React.FC<MenuItemProps> = (props: MenuItemProps) => {
 
-    const { image, name } = props;
+    const { id, name, image } = props;
+
+    const path = `/demo/menu/items/${id}`;
 
     return (
-        <div className='demo-menu-item-container'>
-            <img className='demo-menu-item-img' src={image} alt={name} />
-            <div className='demo-menu-item-name-container'>
-                <h2 className='demo-menu-item-name'>{name}</h2>
+        <Link to={path} className='demo-menu-item-link'>
+            <div className='demo-menu-item-container'>
+                <img className='demo-menu-item-img' src={image} alt={name} />
+                <div className='demo-menu-item-name-container'>
+                    <div className='demo-menu-item-name'>{name}</div>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

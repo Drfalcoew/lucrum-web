@@ -18,6 +18,7 @@ import DemoAbout from './demo-app/about/About';
 import DemoHeader from './demo-app/header/Header';
 import DemoFooter from './demo-app/footer/Footer';
 import DemoMenu from './demo-app/menu/Menu';
+import Items, { ItemsProps } from './demo-app/items/Items';
 
 
 function App() {
@@ -27,6 +28,30 @@ function App() {
   const handleAppointmentScheduled = (data: SchedulePropsData) => {
     setAppointmentData(data);
   };
+
+  const items: ItemsProps[] = [
+    {
+      image: 'https://via.placeholder.com/150',
+      title: 'Double Chicken Tostada Salad ',
+      description: 'Description for item 1',
+      category: 'Salads',
+      price: 10
+    },
+    {
+      image: 'https://via.placeholder.com/150',
+      title: 'Double Chicken Tostada Salad ',
+      description: 'Description for item 2',
+      category: 'Burritos',
+      price: 20
+    },
+    {
+      image: 'https://via.placeholder.com/150',
+      title: 'Double Chicken Tostada Salad ',
+      description: 'Description for item 3',
+      category: 'Tacos',
+      price: 30
+    }
+  ];
 
   return (
     <BrowserRouter>
@@ -71,6 +96,7 @@ function App() {
                   <Route path="/" element={<DemoHome />} />
                   <Route path="/about" element={<DemoAbout />} />
                   <Route path="/menu" element={<DemoMenu />} />
+                  <Route path="/menu/items/*" element={<Items items={items}/>} />
                 </Routes>
                 <DemoFooter />
               </>
