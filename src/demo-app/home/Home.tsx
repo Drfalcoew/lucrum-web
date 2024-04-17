@@ -20,7 +20,7 @@ const DemoHome = () => {
             img: 'https://www.elpolloloco.com/content/img/our-food_1280.webp',
             title: 'OUR FOOD',
             subtitle: 'We are a Mexican restaurant that serves delicious and authentic Mexican food. Our food is made with fresh ingredients and cooked to perfection.',
-            button: 'View Menu'
+            button: 'Order Now'
         },
         {
             img: 'https://www.elpolloloco.com/content/img/order-now_1280.webp',

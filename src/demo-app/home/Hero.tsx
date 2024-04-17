@@ -15,13 +15,13 @@ const DemoHero = () => {
         {
             title: 'El Charro',
             subtitle: 'Welcome to El Charro!',
-            buttonText: 'ORDER NOW',
+            buttonText: 'View Menu',
             image: 'https://www.azamara.com/static-assets/images/blogs/Blog_Preparing%20Authentic%20Mexican%20Meal.jpg'
         },
         {
             title: 'New Special',
             subtitle: 'Come today and try our new special!',
-            buttonText: 'ORDER NOW',
+            buttonText: 'View Menu',
             image: 'https://images.squarespace-cdn.com/content/v1/55a68174e4b086a3c2acfe59/1639940746128-0UC6H5VGD74O367PNAK5/red-sombrero-background-food.png?format=2500w'
         }
     ];

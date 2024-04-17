@@ -24,7 +24,7 @@ const DemoHeader = () => {
                     <h1 className='demo-header-title'>{headerTitle}</h1>
                 </div>
                 <div className='demo-header-container-right'>
-                    <button className='demo-header-button' onClick={() => nav('demo/menu')}>ORDER NOW</button>
+                    <button className='demo-header-button' onClick={() => nav('demo/menu')}>MAIN MENU</button>
                 </div>
             </div>
         </header>

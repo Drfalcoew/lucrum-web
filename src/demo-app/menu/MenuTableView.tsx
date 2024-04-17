@@ -13,7 +13,8 @@ const DemoMenuTableView : React.FC<MenuTableViewProps> = (props: MenuTableViewPr
 
     return (
         <div className='demo-menu-table-view-container'>
-            <h1>MAIN MENU</h1>
+            <div className='demo-menu-table-view-title'>MAIN MENU</div>
+            <p className='demo-menu-table-view-subtitle'>Explore Our Menu Categories</p>
             <div className='demo-menu-table-view'>
                 {categories.map((item) => (
                     <DemoMenuItem id={item.id} image={item.image} name={item.name} />

@@ -25,6 +25,21 @@
     flex: 4;
 }
 
+.demo-menu-table-view-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 25px;
+    font-family: 'luchadoroblique';
+}
+
+.demo-menu-table-view-subtitle {
+    padding-bottom: 0px;
+    font-size: 12px;
+    margin: 0px;
+    font-family: 'luchadoroblique';
+}
+
 /* DEMO MENU LIST */
 
 .demo-menu-list-container {
@@ -112,4 +127,36 @@
 .demo-menu-item-link {
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .demo-menu-list-container {
+        display: none;
+    }
+
+    .demo-menu-container-root {
+        padding: 0px;
+    }
+
+    .demo-menu-item-link {
+        width: 50%;
+    }
+
+    .demo-menu-container {
+        padding: 10px;
+    }
+
+    .demo-menu-table-view-container {
+        padding: 0px;
+    }
+    
+    .demo-menu-item-container {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .demo-menu-item-name {
+        font-size: 18px;
+    }
+    
 }
