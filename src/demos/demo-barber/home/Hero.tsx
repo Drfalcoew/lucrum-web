@@ -22,7 +22,7 @@ const DemoBarberHero = () => {
             title: 'Barber Shop',
             subtitle: 'Freshest cuts in town.',
             buttonText: 'Book Now',
-            image: 'https://images.squarespace-cdn.com/content/v1/55a68174e4b086a3c2acfe59/1639940746128-0UC6H5VGD74O367PNAK5/red-sombrero-background-food.png?format=2500w'
+            image: 'https://heygoldie.com/blog/wp-content/uploads/2021/08/vintage-barbershop-decoration-idea-1024x683.jpg'
         }
     ];
     
