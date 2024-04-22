@@ -45,7 +45,7 @@
 }
 
 .demo-barber-header-button {
-    background-color: #717157;
+    background-color: #9C0120;
     color: white;
     border: none;
     padding: 10px 30px;
@@ -54,13 +54,15 @@
     display: inline-block;
     font-size: 20px;
     font-weight: bolder;
+    border: 3px solid black;
     cursor: pointer;
     height: 7.5vmin;
     transition: background-color 0.3s;
 }
 
 .demo-barber-header-button:hover {
-    background-color: #00269A;
+    background-color: transparent;
+    color: #9C0120;
 }
 
 .demo-barber-app-logo {

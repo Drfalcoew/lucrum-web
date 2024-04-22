@@ -24,7 +24,7 @@ const DemoBarberHeader = () => {
                     <h1 className='demo-barber-header-title'>{headerTitle}</h1>
                 </div>
                 <div className='demo-barber-header-container-right'>
-                    <button className='demo-barber-header-button' onClick={() => nav('demo/menu')}>BOOK NOW</button>
+                    <button className='demo-barber-header-button'>BOOK NOW</button>
                 </div>
             </div>
         </header>

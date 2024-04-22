@@ -10,14 +10,14 @@ const DemoBarberFooter = () => {
                     <div className="cell medium-8 small-order-2 medium-order-1">
                         <div className="grid-x">
                             <div className="demo-barber-footer-learn-more">
-                                <h4><i>Join Loco Rewards</i></h4>
-                                <p>Earn points with every order, receive a birthday reward and other valuable offers throughout the year. Plus, special app features to order ahead, pay, and save your favorites.</p>
-                                <a href="/rewards/" className="learn-more" aria-label="learn more about loco rewards">Learn More</a>
+                                <h4><i>Join Barber Rewards</i></h4>
+                                <p>Earn points with every visit, receive a special birthday treat, and enjoy exclusive offers throughout the year. Plus, unlock app features to schedule appointments, pay, and save your favorite styles.</p>
+                                <a href="/rewards/" className="learn-more" aria-label="learn more about barber rewards">Learn More</a>
                                 <div className="demo-barber-footer-learn-more-app">
-                                    <a className="store-anchor app-ios" href="https://itunes.apple.com/us/app/el-pollo-loco/id1138437085?mt=8" rel="noopener noreferrer" target="_blank" aria-label="appstore link">
+                                    <a className="store-anchor app-ios" href="https://example.com" rel="noopener noreferrer" target="_blank" aria-label="appstore link">
                                         <img src="https://www.elpolloloco.com/content/img/download-button-app-store.webp" alt="app store badge" />
                                     </a>
-                                    <a className="store-anchor app-google" href="https://play.google.com/store/apps/details?id=com.olo.elpolloloco&amp;hl=en" rel="noopener noreferrer" target="_blank" aria-label="google play link">
+                                    <a className="store-anchor app-google" href="https://example.com" rel="noopener noreferrer" target="_blank" aria-label="google play link">
                                         <img src="https://www.elpolloloco.com/content/img/download-button-google.webp" alt="google play badge" />
                                     </a>
                                 </div>
@@ -27,38 +27,35 @@ const DemoBarberFooter = () => {
                                     <Col span={12}>
                                         <ul>
                                             <li>
-                                                <a href="/" aria-label="Menu page link">Menu</a>
+                                                <a href="/" aria-label="Services page link">Services</a>
                                             </li>
                                             <li>
-                                                <a href="/" aria-label="Catering page link">Catering</a>
+                                                <a href="/" aria-label="Gallery page link">Gallery</a>
                                             </li>
                                             <li>
-                                                <a href="/" aria-label="Gift Cards page link">Gift Cards</a>
+                                                <a href="/" aria-label="Products page link">Products</a>
                                             </li>
                                             <li>
-                                                <a href="/" aria-label="Fundraisers page link">Fundraisers</a>
+                                                <a href="/" aria-label="Appointments page link">Appointments</a>
                                             </li>
                                             <li>
-                                                <a href="/" aria-label="Gift Cards page link">Careers</a>
+                                                <a href="/" aria-label="Contact page link">Contact</a>
                                             </li>
                                         </ul>
                                     </Col>
                                     <Col span={12}>
                                         <ul>
                                             <li>
-                                                <a href="/" aria-label="Menu page link">Franchising</a>
+                                                <a href="/" aria-label="About page link">About</a>
                                             </li>
                                             <li>
-                                                <a href="/" aria-label="Catering page link">Investors</a>
+                                                <a href="/" aria-label="Team page link">Team</a>
                                             </li>
                                             <li>
-                                                <a href="/" aria-label="Gift Cards page link">Press Releases</a>
+                                                <a href="/" aria-label="Testimonials page link">Testimonials</a>
                                             </li>
                                             <li>
-                                                <a href="/" aria-label="Fundraisers page link">Contact Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="/" aria-label="Gift Cards page link">Feedback</a>
+                                                <a href="/" aria-label="FAQs page link">FAQs</a>
                                             </li>
                                         </ul>
                                     </Col>
@@ -78,25 +75,16 @@ const DemoBarberFooter = () => {
                     <div className="legal medium-9 small-12 small-order-2 medium-order-2 text-right">
                         <ul className="footer-minor-links">
                             <li>
-                                <a href="/" aria-label="Nutrition Guide PDF link">Nutrition Guide</a>
-                            </li>
-                            <li>
-                                <a href="/" aria-label="Terms of Use link">Terms of Use</a>
-                            </li>
-                            <li>
                                 <a href="/" aria-label="Privacy Policy link">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="/" aria-label="California Privacy Notice link">California Privacy Notice</a>
+                                <a href="/" aria-label="Terms of Service link">Terms of Service</a>
                             </li>
                             <li>
-                                <a href="/" aria-label="Coupon Policy link">Coupon Policy</a>
+                                <a href="/" aria-label="Refund Policy link">Refund Policy</a>
                             </li>
                             <li>
-                                <a href="/" aria-label="Site Map link">Site Map</a>
-                            </li>
-                            <li className="footer-copyright-epl_disabled">
-                                © El Charro. All Rights Reserved
+                                <a href="/" aria-label="Accessibility link">Accessibility</a>
                             </li>
                         </ul>
                     </div>
@@ -105,6 +93,5 @@ const DemoBarberFooter = () => {
         </footer>
     );
 };
-
 
 export default DemoBarberFooter;

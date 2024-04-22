@@ -28,7 +28,7 @@ const DemoBarberHome = () => {
             img: isMobile ? 'https://www.pngitem.com/pimgs/m/564-5646353_barber-chair-png-koken-legacy-barber-chair-transparent.png' : 'barber-shop.webp',
             title: 'Our Services',
             subtitle: 'We are a local barber shop that offers a variety of services to meet your needs. Our barbers are experienced and skilled in their craft, and they are dedicated to providing you with the best service possible.',
-            button: 'Book Now'
+            button: 'See More'
         }
     ]
 
