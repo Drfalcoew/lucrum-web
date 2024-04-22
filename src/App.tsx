@@ -13,12 +13,15 @@ import GetStarted from './main/pages/get-started/GetStarted';
 import ScrollToTop from './reusable-components/ScrollToTop';
 import { SchedulePropsData } from './Types';
 import Success from './main/pages/success/Success';
-import DemoHome from './demo-app/home/Home';
-import DemoAbout from './demo-app/about/About';
-import DemoHeader from './demo-app/header/Header';
-import DemoFooter from './demo-app/footer/Footer';
-import DemoMenu from './demo-app/menu/Menu';
-import Items, { ItemProps } from './demo-app/items/Items';
+import DemoHome from './demos/demo-restaurant/home/Home';
+import DemoAbout from './demos/demo-restaurant/about/About';
+import DemoHeader from './demos/demo-restaurant/header/Header';
+import DemoFooter from './demos/demo-restaurant/footer/Footer';
+import DemoMenu from './demos/demo-restaurant/menu/Menu';
+import Items, { ItemProps } from './demos/demo-restaurant/items/Items';
+import DemoBarberHome from './demos/demo-barber/home/Home';
+import DemoBarberFooter from './demos/demo-barber/footer/Footer';
+import DemoBarberHeader from './demos/demo-barber/header/Header';
 
 
 function App() {
@@ -86,9 +89,9 @@ function App() {
             }
           />
           
-          {/* Routes for demo site */}
+          {/* Routes for demo restaurant site */}
           <Route
-            path="/demo/*"
+            path="/demo/restaurant/*"
             element={
               <>
                 <DemoHeader />
@@ -99,6 +102,21 @@ function App() {
                   <Route path="/menu/items/*" element={<Items items={items}/>} />
                 </Routes>
                 <DemoFooter />
+              </>
+            }
+          />
+
+        {/* Routes for demo restaurant site */}
+        <Route
+            path="/demo/barbershop/*"
+            element={
+              <>
+                <DemoBarberHeader />
+                <Routes>
+                  <Route path="/" element={<DemoBarberHome />} />
+                  <Route path="/about" element={<DemoAbout />} />
+                </Routes>
+                <DemoBarberFooter />
               </>
             }
           />

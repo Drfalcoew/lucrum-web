@@ -1,0 +1,144 @@
+.demo-barber-footer {
+    padding: 45px 20px 20px;
+    background-color: #717157;
+    color: #e6eeec;
+    font-family: 'luchadoroblique';
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    text-align: left;
+}
+
+.demo-barber-footer ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.demo-barber-footer h4 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.demo-barber-footer-learn-more-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.store-anchor {
+    display: inline-block;
+    max-width: 85px;
+    min-width: 85px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.store-anchor img {
+    width: 100%;
+    height: auto;
+}
+
+.demo-barber-footer-learn-more {
+    font-size: 14px;
+    color: #e6eeec;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: left;
+}
+
+.demo-barber-footer-learn-more a {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: block;
+    color: #e6eeec;
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    min-height: 0;
+    min-width: 0;
+    width: 100%;
+}
+
+.grid-x {
+    font-family: "Tiempos Text",Georgia,Times,serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #222323;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.footer-nav-links-one {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-nav-links-row {
+    width: 100%;
+}
+
+.footer-nav-links-one a {
+    color: #e6eeec;
+}
+
+.footer-nav-links-one ul {
+    padding: 0;
+}
+
+.footer-nav-links-one ul li {
+    margin: 15px 60px 15px 0;
+      margin-top: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Tiempos Text",Georgia,Times,serif;
+    font-size: 16px;
+}
+
+.footer-minor-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    color: #e6eeec;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-minor-links li a {
+    color: #e6eeec;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer-minor-links li {
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.footer-minor-links a::after {
+    content: '|';
+    position: relative;
+    right: 0;
+    top: 0;
+    color: #e6eeec;
+    font-size: 12px;
+    line-height: 26px;
+    margin: 0 15px 0 15px;
+}
+
+.footer .legal li::after {
+    content: '|';
+    position: relative;
+    right: 0;
+    top: 0;
+    color: #e6eeec;
+    font-size: 12px;
+    line-height: 26px;
+    margin: 0 15px 0 15px;
+  }

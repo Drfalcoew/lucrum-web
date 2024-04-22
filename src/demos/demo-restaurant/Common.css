@@ -1,0 +1,11 @@
+.demo-page-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* max-width: 1500px;
+    width: 98%; */
+    max-width: 100%;
+    width: 100%; /*this is for full screen*/
+}

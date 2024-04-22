@@ -1,0 +1,105 @@
+.demo-barber-header {
+    background: none;
+    padding: 1px;
+    max-height: 7vmin;
+}
+
+.demo-barber-header-title {
+    margin: 0;
+    font-size: 1.5em;
+    font-family: 'luchadoroblique';
+    color: #717157;
+}
+
+.demo-barber-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+    height: 100%;
+    max-height: 7vmin;
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+
+.demo-barber-header-container-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.demo-barber-header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.demo-barber-header-container-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.demo-barber-header-button {
+    background-color: #717157;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    height: 7.5vmin;
+    transition: background-color 0.3s;
+}
+
+.demo-barber-header-button:hover {
+    background-color: #00269A;
+}
+
+.demo-barber-app-logo {
+    height: 7vmin;
+    pointer-events: none;
+    opacity: 1;
+    border-radius: 5%; 
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.demo-barber-header-container-left {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .demo-barber-header {
+        background: none;
+        padding: 1px;
+        max-height: 12vmin;
+        height: 12vmin;
+    }
+
+    .demo-barber-header-container {
+        padding: 0 0 0 5px;
+        max-height: 12vmin;
+    }
+
+    .demo-barber-header-button {
+        padding: 0px 15px;
+        font-size: 16px;
+        height: 14vmin;
+    }
+
+    .demo-barber-header-title {
+        font-size: 1.2em;
+    }
+
+    .demo-barber-app-logo {
+        height: 12vmin;
+    }
+}

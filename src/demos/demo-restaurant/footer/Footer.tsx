@@ -27,38 +27,38 @@ const DemoFooter = () => {
                                     <Col span={12}>
                                         <ul>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Menu page link">Menu</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Menu page link">Menu</a>
                                             </li>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Catering page link">Catering</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Catering page link">Catering</a>
                                             </li>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Gift Cards page link">Gift Cards</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Gift Cards page link">Gift Cards</a>
                                             </li>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Fundraisers page link">Fundraisers</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Fundraisers page link">Fundraisers</a>
                                             </li>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Gift Cards page link">Careers</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Gift Cards page link">Careers</a>
                                             </li>
                                         </ul>
                                     </Col>
                                     <Col span={12}>
                                         <ul>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Menu page link">Franchising</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Menu page link">Franchising</a>
                                             </li>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Catering page link">Investors</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Catering page link">Investors</a>
                                             </li>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Gift Cards page link">Press Releases</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Gift Cards page link">Press Releases</a>
                                             </li>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Fundraisers page link">Contact Us</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Fundraisers page link">Contact Us</a>
                                             </li>
                                             <li>
-                                                <a href="/demo/menu/" aria-label="Gift Cards page link">Feedback</a>
+                                                <a href="/demo/restaurant/menu/" aria-label="Gift Cards page link">Feedback</a>
                                             </li>
                                         </ul>
                                     </Col>
@@ -70,30 +70,30 @@ const DemoFooter = () => {
 
                 <div className="grid-x bottom-footer">
                     <div className="social medium-3 small-12 small-order-1 medium-order-1 text-left">
-                        <a href="/demo/menu/" rel="noopener noreferrer" target="_blank" className="icon-facebook" aria-label="facebook link"><i className="fa fa-facebook"></i></a>
-                        <a href="/demo/menu/" rel="noopener noreferrer" target="_blank" className="icon-twiter" aria-label="twitter link"><i className="fa fa-twitter"></i></a>
-                        <a href="/demo/menu/" rel="noopener noreferrer" target="_blank" className="icon-instagram" aria-label="instagram link"><i className="fa fa-instagram"></i></a>
-                        <a href="/demo/menu/" rel="noopener noreferrer" target="_blank" className="icon-tiktok" aria-label="tiktok link"><i className=""></i></a>
+                        <a href="/demo/restaurant/menu/" rel="noopener noreferrer" target="_blank" className="icon-facebook" aria-label="facebook link"><i className="fa fa-facebook"></i></a>
+                        <a href="/demo/restaurant/menu/" rel="noopener noreferrer" target="_blank" className="icon-twiter" aria-label="twitter link"><i className="fa fa-twitter"></i></a>
+                        <a href="/demo/restaurant/menu/" rel="noopener noreferrer" target="_blank" className="icon-instagram" aria-label="instagram link"><i className="fa fa-instagram"></i></a>
+                        <a href="/demo/restaurant/menu/" rel="noopener noreferrer" target="_blank" className="icon-tiktok" aria-label="tiktok link"><i className=""></i></a>
                     </div>
                     <div className="legal medium-9 small-12 small-order-2 medium-order-2 text-right">
                         <ul className="footer-minor-links">
                             <li>
-                                <a href="/demo/menu/" aria-label="Nutrition Guide PDF link">Nutrition Guide</a>
+                                <a href="/demo/restaurant/menu/" aria-label="Nutrition Guide PDF link">Nutrition Guide</a>
                             </li>
                             <li>
-                                <a href="/demo/menu/" aria-label="Terms of Use link">Terms of Use</a>
+                                <a href="/demo/restaurant/menu/" aria-label="Terms of Use link">Terms of Use</a>
                             </li>
                             <li>
-                                <a href="/demo/menu/" aria-label="Privacy Policy link">Privacy Policy</a>
+                                <a href="/demo/restaurant/menu/" aria-label="Privacy Policy link">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="/demo/menu/" aria-label="California Privacy Notice link">California Privacy Notice</a>
+                                <a href="/demo/restaurant/menu/" aria-label="California Privacy Notice link">California Privacy Notice</a>
                             </li>
                             <li>
-                                <a href="/demo/menu/" aria-label="Coupon Policy link">Coupon Policy</a>
+                                <a href="/demo/restaurant/menu/" aria-label="Coupon Policy link">Coupon Policy</a>
                             </li>
                             <li>
-                                <a href="/demo/menu/" aria-label="Site Map link">Site Map</a>
+                                <a href="/demo/restaurant/menu/" aria-label="Site Map link">Site Map</a>
                             </li>
                             <li className="footer-copyright-epl_disabled">
                                 © El Charro. All Rights Reserved

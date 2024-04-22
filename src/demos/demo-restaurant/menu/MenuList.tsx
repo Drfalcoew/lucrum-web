@@ -15,7 +15,7 @@ const DemoMenuList : React.FC<MenuTableViewProps> = (props: MenuTableViewProps) 
             <h1 className='demo-menu-list-title'>Main Menu</h1>
             {categories.map((item) => (
                 <Menu.Item key={item.id} onClick={()=>{
-                    nav(`/demo/menu/items/${item.id}`);
+                    nav(`/demo/restaurant/menu/items/${item.id}`);
                 }}>{item.name}</Menu.Item>
             ))}
         </Menu>

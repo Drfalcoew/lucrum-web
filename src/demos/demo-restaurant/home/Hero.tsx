@@ -44,7 +44,7 @@ const DemoHero = () => {
                                     </div>
                                     <h1 className='demo-hero-title'>{item.title}</h1>
                                     <p className='demo-hero-subtitle'>{item.subtitle}</p>
-                                    <Button onClick={() => nav('/demo/menu')} className='demo-hero-button' type='primary'>{item.buttonText}</Button>
+                                    <Button onClick={() => nav('/demo/restaurant/menu')} className='demo-hero-button' type='primary'>{item.buttonText}</Button>
                                 </div>
                             </div>
                         ) : (
@@ -55,7 +55,7 @@ const DemoHero = () => {
                                     </div>
                                     <h1 className='demo-hero-title'>{item.title}</h1>
                                     <p className='demo-hero-subtitle'>{item.subtitle}</p>
-                                    <Button onClick={() => nav('/demo/menu')} className='demo-hero-button' type='primary'>{item.buttonText}</Button>
+                                    <Button onClick={() => nav('/demo/restaurant/menu')} className='demo-hero-button' type='primary'>{item.buttonText}</Button>
                                 </Col>
                                 <Col span={12}>
                                     <div className='hero-image-container'>

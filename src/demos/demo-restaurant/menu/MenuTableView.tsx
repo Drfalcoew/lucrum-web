@@ -34,7 +34,7 @@ const DemoMenuItem : React.FC<MenuItemProps> = (props: MenuItemProps) => {
 
     const { id, name, image } = props;
 
-    const path = `/demo/menu/items/${id}`;
+    const path = `/demo/restaurant/menu/items/${id}`;
 
     return (
         <Link to={path} className='demo-menu-item-link'>

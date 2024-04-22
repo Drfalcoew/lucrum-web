@@ -20,7 +20,7 @@ const AboutSection: React.FC<AboutSectionProps> = (props: AboutSectionProps) => 
                 <p className='demo-page-about-subtitle'>
                     {props.subtitle}
                 </p>
-                <Button onClick={() => props.nav('demo/menu')} type='primary' className='demo-page-about-button'>{props.button}</Button>
+                <Button onClick={() => props.nav('demo/restaurant/menu')} type='primary' className='demo-page-about-button'>{props.button}</Button>
             </div>
         </div>
     );
