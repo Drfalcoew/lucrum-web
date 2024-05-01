@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const DemoHeader = () => {
 
     const navigate = useNavigate();
-    const headerTitle = 'El Charro';
+    const headerTitle = 'La Casita';
 
     const nav = (path: string) => {
         if (window.location.pathname === `/${path}/`) {

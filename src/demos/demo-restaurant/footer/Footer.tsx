@@ -96,7 +96,7 @@ const DemoFooter = () => {
                                 <a href="/demo/restaurant/menu/" aria-label="Site Map link">Site Map</a>
                             </li>
                             <li className="footer-copyright-epl_disabled">
-                                © El Charro. All Rights Reserved
+                                © La Casita. All Rights Reserved
                             </li>
                         </ul>
                     </div>

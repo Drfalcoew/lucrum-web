@@ -13,8 +13,8 @@ const DemoHero = () => {
 
     const heroItems = [
         {
-            title: 'El Charro',
-            subtitle: 'Welcome to El Charro!',
+            title: 'La Casita',
+            subtitle: 'Welcome to La Casita!',
             buttonText: 'View Menu',
             image: 'https://www.azamara.com/static-assets/images/blogs/Blog_Preparing%20Authentic%20Mexican%20Meal.jpg'
         },
