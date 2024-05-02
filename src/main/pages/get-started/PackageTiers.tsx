@@ -13,12 +13,11 @@ const PackageTiers = () => {
         {
             title: 'Premium',
             description: `Unleash the Power of Your Brand Online and Offline!`,
-            price: '$999.00',
+            price: '$1999.00',
             details: (
                 <ul>
                     <li>Website landing page</li>
                     <li>Video shorts/reels</li>
-                    <li>Traditional advertising (flyers, posters)</li>
                     <li>Social media management</li>
                     <li>Comprehensive website with SEO</li>
                     <li>Engaging commercials and videos</li>
@@ -28,7 +27,7 @@ const PackageTiers = () => {
         {
             title: 'Deluxe',
             description: 'Experience Marketing Excellence at Its Finest!',
-            price: '$1299.00',
+            price: '$2997.00',
             icon: 'lightning.gif',
             details: (
                 <ul>

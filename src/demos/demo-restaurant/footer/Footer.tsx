@@ -10,7 +10,7 @@ const DemoFooter = () => {
                     <div className="cell medium-8 small-order-2 medium-order-1">
                         <div className="grid-x">
                             <div className="demo-footer-learn-more">
-                                <h4><i>Join Loco Rewards</i></h4>
+                                <h4><i>Join Our Rewards</i></h4>
                                 <p>Earn points with every order, receive a birthday reward and other valuable offers throughout the year. Plus, special app features to order ahead, pay, and save your favorites.</p>
                                 <a href="/rewards/" className="learn-more" aria-label="learn more about loco rewards">Learn More</a>
                                 <div className="demo-footer-learn-more-app">

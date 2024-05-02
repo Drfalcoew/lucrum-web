@@ -22,6 +22,7 @@ import Items, { ItemProps } from './demos/demo-restaurant/items/Items';
 import DemoBarberHome from './demos/demo-barber/home/Home';
 import DemoBarberFooter from './demos/demo-barber/footer/Footer';
 import DemoBarberHeader from './demos/demo-barber/header/Header';
+import Profile from './main/components/profiles/Profile';
 
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
                   <Route path="/services" element={<Services />} />
                   <Route path="/contact" element={<ContactPage onAppointmentScheduled={handleAppointmentScheduled} />} />
                   <Route path="/getstarted" element={<GetStarted />} />
+                  <Route path="/profile/:id" element={<Profile />} />
                   {appointmentData ? (
                     <Route
                       path="/success"
