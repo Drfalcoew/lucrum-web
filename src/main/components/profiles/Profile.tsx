@@ -53,7 +53,7 @@ const Profile = () => {
                 <div className='profile-info-container'>
                     <div className='profile-banner' />
                     <Avatar className='profile-avatar'
-                    size={{ xs: 150, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
+                    size={{ xs: 150, sm: 150, md: 150, lg: 160, xl: 160, xxl: 160 }}
                     src={profile?.avatar} />
                     <div className='profile-title'>{profile?.name}</div>
                     <div className='profile-subtitle'>{profile?.title}</div>
