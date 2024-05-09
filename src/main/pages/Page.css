@@ -31,7 +31,7 @@
 .page-title {
     font-size: 2em;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     margin-top: 10vh;
     text-align: center;
     max-width: 90%;
@@ -41,8 +41,14 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .page-container {
+        margin: 20px 0;
+    }
+
     .page-title {
         margin-top: 14vh;
+        margin-bottom: 0px;
         font-size: 1.8em;
     }
     

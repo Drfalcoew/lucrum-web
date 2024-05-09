@@ -63,8 +63,8 @@ const PackageTiers = () => {
                                         <div className='getstarted-card-description'>{card.description}</div>
                                         <div className='getstarted-card-content'>
                                             <div className='getstarted-price-container'>
-                                                <div className='getstarted-card-price'>{card.price}</div>
-                                                <div className='getstarted-card-price-details'>per month</div>
+                                            {/* <div className='getstarted-card-price'>{card.price}</div>
+                                            <div className='getstarted-card-price-details'>per month</div> */}
                                             </div>
                                             <div className='getstarted-card-details'>
                                                 {card.details}

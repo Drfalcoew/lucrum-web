@@ -1,7 +1,6 @@
 .custom-card-root-container {
-    margin-top: 50px;
     height: 100%;
-    min-height: 300px;
+    min-height: 500px;
 }
 
 .getstarted-card {
