@@ -43,7 +43,7 @@ const Header = () => {
     return (
         <div className='Header-container'>
             <div className='header-container-left'>
-                <img src='LW-icon.webp' className='App-logo' alt='logo' />
+                <img src='../LW-icon.webp' className='App-logo' alt='logo' />
                 <Link to={'/'} className='Header-title'>
                     Advertising & Marketing Agency
                 </Link>
